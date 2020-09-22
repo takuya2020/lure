@@ -1,0 +1,12 @@
+<div class="wrapper">
+    <div class="side">
+      <% @posts.each do |post| %>
+      <a><%= link_to post.lure, '/lures/show' %></a><br>
+      <% end %>
+    </div>
+    <div class="main">
+      <% @items.each do |item| %>
+      <a><%=  item.item %></a><br>
+      <% end %>
+    </div>
+</div>
