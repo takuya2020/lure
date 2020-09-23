@@ -1,3 +1,9 @@
-    <% @posts.each do |post| %>
-    <a><%= link_to post.lure, '/lures/show' %></a><br>
-    <% end %>
+<a><%= link_to @posts[0]['lure'], '/lures/item'%></a><br>
+<a><%= link_to @posts[1]['lure'], '/lures/pen' %></a><br>
+<!--
+<div class="side">
+   <% @posts.each do |post| %>
+   <a><%= link_to post.lure,'/lures/item'%></a><br>
+   <% end %>
+</div>
+-->

@@ -1,12 +1,20 @@
-<div class="wrapper">
-    <div class="side">
-      <% @posts.each do |post| %>
-      <a><%= link_to post.lure, '/lures/show' %></a><br>
-      <% end %>
-    </div>
-    <div class="main">
-      <% @items.each do |item| %>
-      <a><%=  item.item %></a><br>
-      <% end %>
-    </div>
+ <div class="wrapper">
+ <div class="side">
+  <a><%= link_to "a", '/lures/item'%></a><br>
+  <a><%= link_to 'edit', '/lures/edit' %>@posts[1]['lure']</a><br>
+  <br>
+   <% @posts.each do |post| %>
+   <a><%= post.lure %></a><br>
+   <% end %>
+</div>
+  <div class="item">
+    <% @items.each do |item| %>
+    <a><%=  item.item %></a><br>
+    <% end %>
+  </div>
+  <div class="pen">
+    <% @pens.each do |pen| %>
+    <a><%=  pen.pen %></a><br>
+    <% end %>
+  </div>
 </div>
